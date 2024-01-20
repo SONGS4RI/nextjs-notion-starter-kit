@@ -2,22 +2,22 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '05a2624b3a2f4029a3540174600bd7f7',
+  rootNotionPageId: '5cdb4e0e81734eb29b4e730aee478241',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'goojiong\'s archive',
-  domain: 'goojiong.vercel.app',
-  author: 'jiyeon koo',
+  name: 'SONGS4RI',
+  domain: 'songs4ri.vercel.app',
+  author: 'Jahoon Lee',
 
   // open graph metadata (optional)
   // description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
-  github: 'noeyiz',
+  github: 'songs4ri',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -50,7 +50,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: '23d2c9165ad94e2aa0ffe85b0b3dc4fa'
+      pageId: 'fb8e3348e44c4264a96f0be985791804'
     },
   ]
 })
