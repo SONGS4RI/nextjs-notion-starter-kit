@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 export const GitHubShareButton: React.FC = () => {
   return (
     <a
-      href='https://github.com/noeyiz'
+      href='https://github.com/songs4ri'
       target='_blank'
       rel='noopener noreferrer'
       className={styles.githubCorner}
@@ -16,7 +16,7 @@ export const GitHubShareButton: React.FC = () => {
         height='80'
         viewBox='0 0 250 250'
         style={{
-          fill: '#E7B5BF',
+          fill: '#DEB887',
           color: '#fff',
           position: 'absolute',
           zIndex: 1001,
