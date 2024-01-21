@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Jahoon Lee',
 
   // open graph metadata (optional)
-  // description: 'Example Next.js Notion Starter Kit Site',
+  description: 'SONGS4RI\'s Notion Blog',
 
   // social usernames (optional)
   github: 'songs4ri',
