@@ -25,6 +25,9 @@ export default siteConfig({
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
+  // Utteranc.es comments via GitHub issue comments (optional)
+  utterancesGitHubRepo: 'songs4ri/nextjs-notion-starter-kit',
+
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
 
@@ -42,6 +45,7 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
   pageUrlOverrides: null,
+  isSearchEnabled: false,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.

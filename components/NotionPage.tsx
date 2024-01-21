@@ -21,6 +21,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
 import { GitHubShareButton } from './GitHubShareButton'
+import { ReactUtterances } from './ReactUtterances'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
@@ -241,6 +242,22 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const socialDescription =
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
+    let comments: React.ReactNode = null
+
+    // only display comments and page actions on blog post pages
+    if (isBlogPost) {
+      if (config.utterancesGitHubRepo) {
+        comments = (
+          <ReactUtterances
+            repo={config.utterancesGitHubRepo}
+            issueMap='issue-term'
+            issueTerm='title'
+            label='✨💬✨'
+            theme={isDarkMode ? 'photon-dark' : 'github-light'}
+          />
+        )
+      }
+    }
 
   return (
     <>
@@ -276,6 +293,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageCoverPosition={config.defaultPageCoverPosition}
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
+        pageFooter={comments}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
